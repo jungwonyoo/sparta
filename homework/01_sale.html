@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Sedgwick+Ave&display=swap"
+          rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        .img-box {
+            background-image: url("assets/13mini.jpg");
+            background-size: cover;
+            background-position: center;
+
+            height: 220px;
+            width: 500px;
+
+            margin: 30px auto 20px auto;
+
+            border: 2px solid #969696;
+            border-radius: 20px;
+        }
+
+        .highlight-font {
+            font-family: 'Sedgwick Ave', cursive;
+            font-weight: bold;
+            background-color: #F1EFEFE5;
+            color: deeppink;
+            text-align: center;
+            margin: 100px auto 20px auto;
+        }
+
+        .price {
+            font-size: 15px;
+            color: blue;
+        }
+
+        .item-desc {
+            margin-bottom: 20px;
+        }
+
+        .btn-box {
+            text-align: center;
+        }
+
+        .btn-deco {
+            color: white;
+            background-color: pink;
+            border: deeppink;
+        }
+    </style>
+
+    <script>
+        function buy() {
+            alert('주문이 완료되었습니다!')
+        }
+    </script>
+
+    <title>스파르타코딩클럽 | 상품 판매 페이지 만들기</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="img-box">
+            <h3 class="highlight-font">iPhone 13 mini Pink</h3>
+        </div>
+
+        <div class="item-desc">
+            <h3>iPhone 13 mini <span class="price">₩950,000부터 ~ </span></h3>
+            <h5>iPhone 13, 보다 자세히 들여다보기.</h5>
+        </div>
+
+        <div class="item-desc">
+            <h6>Apple이 만든 이제껏 가장 앞선 듀얼 카메라 시스템. 최대 47% 향상된 저조도 촬영 성능.
+                얕은 피사계 심도 효과를 자동으로 적용해주는 시네마틱 모드. 촬영을 마친 후에도 초점 전환 가능.</h6>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                   aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>--수량을 선택하세요(최대 3개)--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2">주소</span>
+            </div>
+            <input type="text" class="form-control" placeholder="address" aria-label="address"
+                   aria-describedby="basic-addon2">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">전화번호</span>
+            </div>
+            <input type="text" class="form-control" placeholder="number" aria-label="number"
+                   aria-describedby="basic-addon3">
+        </div>
+
+        <div class="btn-box">
+            <button onclick="buy()" type="submit" class="btn btn-primary btn-deco">주문하기</button>
+        </div>
+    </div>
+</body>
+</html>
