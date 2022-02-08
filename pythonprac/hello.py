@@ -17,15 +17,13 @@ soup = BeautifulSoup(data.text, 'html.parser')
 trs = soup.select('#old_content > table > tbody > tr')
 
 #old_content > table > tbody > tr:nth-child(2) > td.title > div > a
-
 #old_content > table > tbody > tr:nth-child(2) > td:nth-child(1) > img
-
 #old_content > table > tbody > tr:nth-child(2) > td.point
 
 for tr in trs:
     a_tag = tr.select_one('td.title > div > a')
 
-    if a_tag is not None:
+    if a_tag is not None: # a_tag가 None이 아닐 때
         rank = tr.select_one('td:nth-child(1) > img')['alt']
         title = a_tag.text
         point = tr.select_one('td.point').text
