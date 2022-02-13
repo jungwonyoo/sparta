@@ -30,7 +30,7 @@ def write_review():
 
 @app.route('/review', methods=['GET'])
 def read_reviews():
-    reviews = list(db.bookreview.find({}, {'_id' : False})) # 값을 담는 변수
+    reviews = list(db.bookreview.find({}, {'_id': False})) # 값을 담는 변수
     return jsonify({'all_reviews': reviews})
 
 
